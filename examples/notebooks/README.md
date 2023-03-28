@@ -2,7 +2,7 @@
 
 This sample code will run a simple inference loop to estimate the inference time for running Resnet50 on PyTorch. 
 
-To compare the results, we added the native and also OpenVINO inference for quick time comparison with IPEX.
+To compare the results, we added the native and also OpenVINO inference for quick time comparison with IPEX. Particularly, we will benchmark with sync and async mode to compare the performance further. 
 
 
 # How to Run (Linux)
