@@ -9,7 +9,7 @@ To compare the results, we added the native and also OpenVINO inference for quic
 
 ### Setup Virtual Environment
 ```
-python3 -v venv ipex_openvino_env
+python3 -m venv ipex_openvino_env
 source ipex_openvino_env/bin/activate
 ```
 ### Install OpenVINO
