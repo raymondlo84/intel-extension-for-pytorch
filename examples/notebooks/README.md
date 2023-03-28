@@ -7,6 +7,12 @@ To compare the results, we added the native and also OpenVINO inference for quic
 
 # How to Run (Linux)
 
+
+```
+git clone https://github.com/raymondlo84/intel-extension-for-pytorch.git
+cd intel-extension-for-pytorch
+```
+
 ### Setup Virtual Environment
 ```
 python3 -m venv ipex_openvino_env
@@ -17,21 +23,22 @@ source ipex_openvino_env/bin/activate
 ```
 pip install --upgrade pip
 pip install wheel setuptools
-pip install openvino-dev 
+pip install openvino-dev[onnx]
 ```
 
 ### Install IPEX
 
 ```
-pip install intel_extension_for_pytorch
-pip install intel_extension_for_pytorch -f https://developer.intel.com/ipex-whl-stable-cpu
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+python -m pip install intel_extension_for_pytorch
+python -m pip install intel_extension_for_pytorch -f https://developer.intel.com/ipex-whl-stable-cpu
 
 ```
 
 ### Install Jupyter Lab
 
 ```
-pip install jupyterlab
+pip install jupyterlab ipywidgets
 
 ```
 
@@ -41,4 +48,8 @@ jupyter lab examples/notebooks
 ```
 
 Then, open benchmark.ipynb and run the notebook :)
+
+
+Note: https://intel.github.io/intel-extension-for-pytorch/cpu/latest/tutorials/installation.html
+
 
