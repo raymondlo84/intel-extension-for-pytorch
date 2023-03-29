@@ -7,7 +7,6 @@ To compare the results, we added the native and also OpenVINO inference for quic
 
 # How to Run (Linux)
 
-
 ```
 git clone https://github.com/raymondlo84/intel-extension-for-pytorch.git
 cd intel-extension-for-pytorch
@@ -18,15 +17,15 @@ cd intel-extension-for-pytorch
 python3 -m venv ipex_openvino_env
 source ipex_openvino_env/bin/activate
 ```
-### Install OpenVINO
+### Install OpenVINO 2022.3
 
 ```
 pip install --upgrade pip
 pip install wheel setuptools
-pip install openvino-dev[onnx]
+pip install openvino-dev[onnx]==2022.3
 ```
 
-### Install IPEX
+### Install IPEX (along with PyTorch 2.0+)
 
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
